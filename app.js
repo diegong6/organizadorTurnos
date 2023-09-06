@@ -76,3 +76,10 @@ const add_btn_up = () => {
     btn_up.classList.add("btn_up-on");
   }
 };
+
+//PRUEBA
+
+function resetear() {
+  document.getElementById("tasks").innerHTML = "";
+  localStorage.clear();
+}
