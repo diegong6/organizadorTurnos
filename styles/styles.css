@@ -105,22 +105,41 @@ html {
   color: var(--clr-white);
 }
 
+.boton-reset {
+  color: var(--clr-white);
+  font-size: 13px;
+  background-color: #dc3546e3;
+  padding: 8px;
+  font-weight: bold;
+  border: 1px solid #dc3546e3;
+  border-radius: 5px;
+}
+
+.boton-reset:hover {
+  background-color: #dc3545;
+  border: 1px solid #dc3545;
+}
 
 @media (max-width: 900px) {
-
   .p3 {
     position: relative;
     color: var(--clr-white);
   }
-
 }
 
+@media (max-width: 780px) {
+  .boton-reset {
+    margin-top: 25px;
+    font-size: 10px;
+  }
 
-@media (max-width: 500px){
-
-  .titulo-1{
-font-size: 15px;
+  .btn_up {
+    display: none;
   }
 }
 
-
+@media (max-width: 500px) {
+  .titulo-1 {
+    font-size: 15px;
+  }
+}
