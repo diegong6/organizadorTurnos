@@ -1,0 +1,126 @@
+/*DEFAULT*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+:root {
+  --clr-white: #ececec;
+  --clr-dark: #000000;
+  --clr-gray: #969191;
+  --clr-gray-dark: #555353;
+  --clr-gold: #ffd700;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--clr-dark);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--clr-white);
+  border-radius: 20px;
+  border: 3px solid var(--clr-dark);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--clr-white) var(--clr-dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.c-1 {
+  margin-top: 40px;
+}
+
+.titulo-1 {
+  color: var(--clr-white);
+  background-color: var(--clr-dark);
+  font-size: 25px;
+  padding: 0px;
+  padding-left: 6px;
+  padding-right: 6px;
+  box-shadow: 0px 0px 5px 5px var(--clr-dark);
+  border-radius: 15px 15px 0px 0px;
+}
+
+.cont1 {
+  background-image: url(../imgs/desktop-wallpaper-3-zen-spa-relaxing-spa.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30rem;
+  max-width: 100%;
+  position: relative;
+}
+
+.texto-col8 {
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* BOTON UP JAVASCRIPT*/
+
+.btn_up {
+  position: fixed;
+  text-align: center;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--clr-gray-dark);
+  color: var(--clr-white);
+  width: 50px;
+  height: 35px;
+  border-radius: 15px;
+  border: 1px solid var(--clr-gray-dark);
+  font-size: 20px;
+  text-decoration: none;
+  padding-bottom: 3px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 5px var(--clr-gray-dark);
+}
+
+.btn_up:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-dark);
+  border: 1px solid var(--clr-white);
+  box-shadow: 0px 0px 5px 5px var(--clr-white);
+  font-size: 20px;
+}
+
+.p3 {
+  position: fixed;
+  text-align: center;
+  bottom: 1px;
+  left: 20px;
+  color: var(--clr-white);
+}
+
+
+@media (max-width: 900px) {
+
+  .p3 {
+    position: relative;
+    color: var(--clr-white);
+  }
+
+}
+
+
+@media (max-width: 500px){
+
+  .titulo-1{
+font-size: 15px;
+  }
+}
+
+
