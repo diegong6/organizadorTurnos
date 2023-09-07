@@ -69,9 +69,9 @@ html {
   margin-top: 40px;
 }
 
-/* BOTON UP JAVASCRIPT*/
+/* BOTON UP*/
 
-.btn_up {
+.boton_up {
   position: fixed;
   text-align: center;
   bottom: 20px;
@@ -89,7 +89,7 @@ html {
   box-shadow: 0px 0px 10px 5px var(--clr-gray-dark);
 }
 
-.btn_up:hover {
+.boton_up:hover {
   background-color: var(--clr-white);
   color: var(--clr-dark);
   border: 1px solid var(--clr-white);
@@ -120,6 +120,35 @@ html {
   border: 1px solid #dc3545;
 }
 
+#calcu {
+  background-color: var(--clr-gray-dark);
+  color: var(--clr-white);
+  border: 1px solid var(--clr-gray-dark);
+  font-weight: bold;
+}
+
+#calcu:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-dark);
+  border: 1px solid var(--clr-dark);
+}
+
+.boton-volver {
+  color: var(--clr-white);
+  font-size: 13px;
+  width: 150px;
+  background-color: var(--clr-dark);
+  padding: 8px;
+  font-weight: bold;
+  border: 1px solid var(--clr-dark);
+  border-radius: 5px;
+}
+
+.boton-volver:hover {
+  background-color: var(--clr-gray);
+  border: 1px solid var(--clr-gray);
+}
+
 @media (max-width: 900px) {
   .p3 {
     position: relative;
@@ -133,7 +162,12 @@ html {
     font-size: 10px;
   }
 
-  .btn_up {
+.boton-volver{
+  font-size: 10px;
+  width: 80px;
+}
+
+  .boton_up {
     display: none;
   }
 }
@@ -142,4 +176,60 @@ html {
   .titulo-1 {
     font-size: 15px;
   }
+}
+
+/*CALCULADORA*/
+
+.calculadora {
+  background-color: var(--clr-white);
+  color: white;
+  width: 350px;
+  max-width: 100%;
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.pantalla {
+  grid-column: 1 / -1;
+  background-color: var(--clr-gray);
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: right;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.bot1 {
+  background-color: var(--clr-gray);
+  color: var(--clr-white);
+  border: 0;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.bot1:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-gray-dark);
+}
+
+#cero {
+  grid-column: span 2;
+}
+
+#igual {
+  grid-row: span 2;
+  background-color: #e6394a;
+}
+
+#igual:hover {
+  background-color: #e65766;
 }

@@ -58,28 +58,7 @@ function getTasks() {
 
 getTasks();
 
-// boton up
-
-const btn_up = document.getElementById("btn_up");
-btn_up.addEventListener("click", () => {
-  window.scrollTo(0, 0);
-});
-
-window.onscroll = () => {
-  add_btn_up();
-};
-
-const add_btn_up = () => {
-  if (window.scrollY < 300) {
-    btn_up.classList.remove("btn_up-on");
-  } else {
-    btn_up.classList.add("btn_up-on");
-  }
-};
-
-//PRUEBA
-
 function resetear() {
   document.getElementById("tasks").innerHTML = "";
   localStorage.clear();
-}
+};

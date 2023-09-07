@@ -15,9 +15,10 @@
 <body class="cont1">
 
   <!-- NAVIGATION -->
-  <nav class="navbar navbar-light bg-white">
+  <nav class="navbar navbar-light bg-white" id="ir-arriba">
     <div class="container bg-white">
       <a class="navbar-brand titulo-1 text-light" href="./index.html">ORGANIZADOR DE TURNOS</a>
+      <a href="./pages/calculadora.html"><button class="boton-reset" id="calcu">CALCULADORA</button></a>
       <button onclick="resetear()" class="boton-reset">BORRAR TODO</button>
 
     </div>
@@ -50,9 +51,9 @@
 
   </div>
   <!-- BOTON UP -->
-  <button class="btn_up" id="btn_up">
-    <i class="bi bi-caret-up-fill"></i>
-  </button>
+  <a href="#ir-arriba"><button class="boton_up">
+      <i class="bi bi-caret-up-fill"></i>
+    </button></a>
 
   <script src="./app.js"></script>
 
