@@ -338,5 +338,7 @@ html {
   height: 90px;
   filter: brightness(1.1);
   mix-blend-mode: multiply;
-  background-color: #ffffff;
+  background-color: var(--clr-white);
+  padding: 10px;
+  border-radius: 50px;
 }
