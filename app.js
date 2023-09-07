@@ -62,3 +62,6 @@ function resetear() {
   document.getElementById("tasks").innerHTML = "";
   localStorage.clear();
 };
+
+
+
